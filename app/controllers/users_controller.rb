@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    # UserモデルはUser.allというリクエストに対して、DB上の全てのユーザーを返すことができる
     @users = User.all
   end
 
